@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>
+	validation
+</title>
+<style>
+	*{
+		padding: 10px;
+	
+	}
+	
+	body{
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	}
+	.container{
+	position: relative;
+	margin-top: 0px;
+	width: 450px;
+	height: auto;
+	background: aqua;
+	border-radius: 5px;
+	
+	
+	}
+	
+	.label{
+	
+		padding: 20px 130px;
+		font-size: 35px;
+		font-width: bold;
+		color: #130f40;
+		
+	
+	}
+	.login_form{
+	
+	
+		padding: 20px 40px;
+	
+	}
+	.login_form .font{
+	
+		font-size: 18px;
+		color: #130f140;
+		margin: 5px 0;
+	
+	}
+	
+	.login_form input{
+	
+		height: 40px;
+		width: 350px;
+		padding: 0 5px;
+		font-size: 18px;
+		outline: none;
+		border: 1px solid silver;
+	
+	}
+	
+	.login_form .font2{
+	
+		margin-top: 30px;
+	}
+	
+	.login_form button{
+	
+		margin: 45px 0 30px 0;
+		height: 45px;
+		width: 365px;
+		font-size: 20px;
+		color: white;
+		outline: none;
+		cursor: pointer;
+		font-weight: bold;
+		background: #7e1a51;
+		border-radius: 3px;
+		border: 1px solid #3949AB;
+	
+	}
+	
+	.login_form button:hover
+	{
+	
+		background: rgb(234, 245, 151);
+	}
+	.login_form #email_error,
+	.login_form #pass_error{
+	
+		margin-top: 5px;
+		width: 345px;
+		font-size: 18px;
+		color: #1c0808;
+		background: rgba(255, 0, 0, 0.1);
+		text-align: center;
+		padding: 5px 8px;
+		border-radius: 3px;
+		border: 1px solid #EF9A9A;
+		display: none;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</style>
+
+</head>
+<body background="C:\Users\Samruddhi\Pictures/bg_img.jpg">
+	
+<div class="container">
+	<h1 align="CENTER" ><font color="red"><ins><b>PLEASE LOGIN TO BECOME OUR REGULAR CUSTOMER</b></ins></font></h1>
+    <h2 align="center"><b>MENS WORLD MART</b></h2>
+<h1 class="label">User Login</h1>
+<center><img src="logo.jpg" width="200" height="200"></center>
+
+<form  class="login_form" action="registration2.html"
+method="post" name="form" onsubmit="return validated()">
+<div class="font">Email or Login</div>
+<input  type="text" name="email">
+<div id="email_error">Please fill Your Email</div>
+<div class="font font2">Password</div>
+<input type="password" name="password">
+<div id="pass_error">Please Fill Your Password</div>
+
+<button><a href="home3.html">LOGIN</a></button>
+
+
+</form>
+</div>
+
+<script src="valid.js"></script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
